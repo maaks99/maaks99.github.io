@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(37, 44, 82);
+    color: white;
+}
+
+.main-form {
+    margin-top: 50px;
+    display: flex;  
+}
+.main-form #imie, #nazwisko, #tel {
+margin-left: 5px;
+}
+
+.main-form #name, #surname, #phone {
+    background-color: rgb(43, 153, 197) ; 
+    margin-right: 5px;
+}
+
+button{
+    margin-top: 20px;
+    cursor: pointer;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+button:hover {
+    background-color:black;
+    color: white;
+    padding: 10px;
+}
+
+
+

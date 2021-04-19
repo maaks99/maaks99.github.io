@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form class="main-form">
+        <label for="name" id="imie">Imię:</label>
+        <input type="text" id="name"> <br>
+
+        <label for="surname" id="nazwisko">Nazwisko:</label>
+        <input type="text" id="surname"> <br>
+
+        <label for="phone" id="tel">Nr.telefonu:</label>
+        <input type="tel" name="phone" id="phone" maxlength="9"> <br>
+       
+    </form>
+
+    <button>Wyświetl dane</button>
+    <div id="container">
+        <p>Dane:</p>
+        <p id="name-par"></p>
+        <p id="surname-par"></p>
+        <p id="phone-par"></p>
+    </div>
+ 
+    <script src="js/main.js"></script>
+</body>
+</html>

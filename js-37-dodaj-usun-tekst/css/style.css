@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(95, 93, 93);
+}
+
+#tekst {
+    background-color: rgb(56, 53, 148);
+    color: white;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: rgb(216, 171, 24);
+    text-transform: uppercase;
+}
+
+button {
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid blue; 
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+button:hover{
+    background-color:rgb(21, 201, 224);
+    color:white;
+}
