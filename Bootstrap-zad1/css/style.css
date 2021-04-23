@@ -1,0 +1,27 @@
+.fab {
+    font-size: 50px;
+  
+}
+
+hr {
+    max-width: 100px ;
+}
+
+.container {
+    max-width: 500px ;
+    
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.col-item i {
+    line-height: 100px;
+}
+
+
+
+
