@@ -67,6 +67,8 @@ li,a {
 
 .drop-down #drop {
     display: none;
+    color: rgb(62, 146, 224);
+    cursor: pointer;
 }
 
 .drop-down .list {
@@ -78,6 +80,10 @@ li,a {
 }
 
 @media (max-width: 630px) {
+
+    #navbar, #home, #about, #projects {
+        width: 100%;
+    }
     .drop-down #drop {
         display: inline-block;
         float: right;
@@ -91,6 +97,16 @@ li,a {
     #navbar li {
         padding: 10px;
         margin: 0;
+    }
+
+    #projects .projects-content {
+        width: 300px;
+        height: 200px;
+    }
+
+    #projects .projects-content .np {
+        width: 299px;
+        margin-top: 128px;
     }
 }
 
@@ -158,6 +174,11 @@ li,a {
     margin-bottom: 50px;
 }
 
+.about-content .image:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
 .about-content .skills {
     margin-right: 300px;
     margin-top: 35px;
@@ -180,7 +201,7 @@ li,a {
     transition: 0.5s;
     font-weight: bold;
     color: rgb(106, 246, 12);
-    transform: rotate(-5deg);
+    transform: scaleX(1.1);
 }
 
 .about-content .skills .skill-box i {
@@ -211,17 +232,20 @@ li,a {
 }
 
 .projects-row { 
-    display: block;
+    display: block; 
 }
 
 .projects-content {
     background-color: red;
     width: 350px;
     height: 250px;
-    margin: 100px;
+    margin: 70px;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 .projects-content:hover {
-    
+    transform: scale(1.2);
+    transition: 0.5s;
 }
 
 .projects-content p {
@@ -232,28 +256,63 @@ li,a {
 } 
 
 .projects-content .np {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
     height: 70px;
-    width: 350px;
+    width: 349px;
     display: inline-block;
     margin-top: 180px;
+    border-radius: 10px;
 }
 
 .projects-content .np a {
-    display: flex;
-    justify-content: center;
+    display: inline-block;
     text-decoration: none;
-    margin-top: 10px;
+    margin-top: 25px;
     font-weight: bold;
+    color: rgb(34, 124, 228);
+    margin-left: 90px;
+    font-size: 2vh;
 }
+
 
 #projects .web-bootstrap {
     background: url(../img/bootstrap.jpg) center center/cover;
-    border-radius: 10px;
 }
 
 #projects .web-spa {
     background: url(../img/spa.jpg) center center/cover;
-    border-radius: 10px;
+}
+
+@media (max-width: 992px) {
+    #about .about-info {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1400px) {
+    .container-projects {
+        display: inline-block;
+
+    }
+
+}
+
+@media (max-width: 840px) {
+    .about-content {
+        display: block;
+    }
+
+    .about-content .about-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-content .info-me {
+        width: 100%;
+    }
+
+    .about-content .skills {
+       
+    }
 }
 
