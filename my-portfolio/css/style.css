@@ -1,0 +1,259 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 50%;
+    margin-top: 200px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 60px;
+    background-color: rgb(62, 146, 224);
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: blue;
+    transition: 0.3s;
+}
+
+/* navbar */
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    font-size: 25px;
+    line-height: 2;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    font-weight: bold;
+}
+
+li,a {
+    color: #fff;
+}
+
+#navbar a {
+    text-decoration: none;
+}
+
+#navbar #logo {
+    margin-left: 20px;
+}
+
+#navbar li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    margin-right: 40px;
+}
+
+#navbar li:hover {
+    background-color: rgb(62, 146, 224);
+    transition: 0.3s;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.drop-down #drop {
+    display: none;
+}
+
+.drop-down .list {
+    display: inline-block;
+}
+
+.text-primary {
+    color: rgb(27, 133, 231);
+}
+
+@media (max-width: 630px) {
+    .drop-down #drop {
+        display: inline-block;
+        float: right;
+        margin-right: 15px;
+    }
+
+    #navbar .list {
+        display: none;
+    }
+
+    #navbar li {
+        padding: 10px;
+        margin: 0;
+    }
+}
+
+/* Section home */
+
+#home {
+    display: flex;
+    justify-content: center;
+    background: url(../img/home.jpg) no-repeat center center/cover;
+    
+}
+
+#home .home-info {
+    text-align: center;
+}
+
+.home-info h1{
+    font-size: 7vh;
+    margin: 70px;
+}
+
+.home-info h2 {
+    font-size: 4vh;
+}
+
+/* sectionAbout */
+#about {
+    background: url(../img/bg-about.png) no-repeat;
+}
+
+#about h1 {
+  text-align: center;
+  font-size: 5vh;
+  padding: 45px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;  
+}
+
+.about-content p {
+    font-size: 2.5vh;   
+}
+
+.about-content .info-me {
+    width: 450px;
+    margin-bottom: 30px;
+}
+
+.about-content .about-info {
+    padding: 0 30px;
+    margin-top: 35px;
+    margin-left: 15%;
+}
+
+.about-content h2 {
+    font-size: 4vh;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about-content .image {
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.about-content .skills {
+    margin-right: 300px;
+    margin-top: 35px;
+}
+
+.about-content .skills-list {
+    padding-bottom: 50px;
+    margin-top: 70px;
+}
+
+.about-content .skills-list .skill-box p {
+    background-color: rgb(62, 146, 224);
+    width: 300px;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.about-content .skills-list .skill-box p:hover {
+    padding: 13px;
+    transition: 0.5s;
+    font-weight: bold;
+    color: rgb(106, 246, 12);
+    transform: rotate(-5deg);
+}
+
+.about-content .skills .skill-box i {
+    margin-right: 10%;
+    margin-left: 10%;
+ }
+
+.about-content .skills-list .skill-box {
+    margin-top: 60px;
+}
+
+/* sectionProjects */
+
+
+#projects {
+    background: rgb(238, 236, 236);
+}
+
+#projects h2 {
+    font-size: 5vh;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.container-projects {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects-row { 
+    display: block;
+}
+
+.projects-content {
+    background-color: red;
+    width: 350px;
+    height: 250px;
+    margin: 60px;
+}
+.projects-content:hover {
+    
+}
+
+.projects-content p {
+    text-align: center;
+    font-size: 2.5vh;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+} 
+
+.projects-content .np {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 70px;
+    width: 350px;
+    display: inline-block;
+    margin-top: 153px;
+}
+
+.projects-content .np a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#projects .web-bootstrap {
+    background: url(../img/bootstrap.jpg) center center/cover;
+    border-radius: 10px;
+}
+
+#projects .web-spa {
+    background: url(../img/spa.jpg) center center/cover;
+    border-radius: 10px;
+}
+
