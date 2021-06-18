@@ -386,5 +386,9 @@ li,a {
         width: 299px;
         margin-top: 128px;
     }
+
+    #form input {
+        width: 100%;
+    }
 }
 
