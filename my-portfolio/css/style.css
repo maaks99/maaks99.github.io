@@ -19,7 +19,7 @@
 
 .btn:hover {
     background-color: blue;
-    transition: 0.3s;
+    transition: all 0.3s;
 }
 
 /* navbar */
@@ -61,7 +61,7 @@ li,a {
     background-color: rgb(62, 146, 224);
     transition: 0.3s;
     border-radius: 10px;
-    padding: 5px;
+    padding: 2px;
     cursor: pointer;
 }
 
@@ -77,37 +77,6 @@ li,a {
 
 .text-primary {
     color: rgb(27, 133, 231);
-}
-
-@media (max-width: 630px) {
-
-    #navbar, #home, #about, #projects {
-        width: 100%;
-    }
-    .drop-down #drop {
-        display: inline-block;
-        float: right;
-        margin-right: 15px;
-    }
-
-    #navbar .list {
-        display: none;
-    }
-
-    #navbar li {
-        padding: 10px;
-        margin: 0;
-    }
-
-    #projects .projects-content {
-        width: 300px;
-        height: 200px;
-    }
-
-    #projects .projects-content .np {
-        width: 299px;
-        margin-top: 128px;
-    }
 }
 
 /* Section home */
@@ -240,7 +209,7 @@ li,a {
     width: 350px;
     height: 250px;
     margin: 70px;
-    border: 1px solid black;
+    border: 1px solid rgb(34, 124, 228);
     border-radius: 10px;
 }
 .projects-content:hover {
@@ -283,6 +252,78 @@ li,a {
     background: url(../img/spa.jpg) center center/cover;
 }
 
+/* SectionContact */
+
+#contact .contact-box {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#contact .contact-box h2 {
+    font-size: 5vh;
+    margin-bottom: 50px;
+}
+
+.contact-box input {
+    margin: 20px;
+    width: 30%;
+    padding: 20px;
+    font-size: 2vh;
+    border: 1px solid rgb(27, 133, 231);
+}
+
+.contact-box input,textarea:focus {
+    outline: none;
+}
+
+.contact-box textarea {
+    font-size: 2vh;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid rgb(27, 133, 231);
+}
+
+.contact-box button {
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-size: 2vh;
+    width: 25%;
+    padding: 15px;
+}
+
+/* footer */
+
+    #footer {
+        width: 100%;
+        background-color: #333;
+        color: white;
+        height: 100px;
+        text-align: center;
+    }
+
+    #footer div p {
+        display: inline-block;
+        margin-top: 50px;
+        font-size: 2vh;
+    }
+
+    #footer div a {
+        margin-right: 40px;
+        font-size: 2vh;
+        cursor: pointer;
+    }
+
+    #footer div a:hover {
+        color: rgb(34, 124, 228);
+        font-size: 2.5vh;
+        transition: all 0.3s;
+    }
+
+
+/* Media */
+
+
 @media (max-width: 992px) {
     #about .about-info {
         margin-left: 0;
@@ -313,6 +354,37 @@ li,a {
 
     .about-content .skills {
        
+    }
+}
+
+@media (max-width: 630px) {
+
+    #navbar, #home, #about, #projects {
+        width: 100%;
+    }
+    .drop-down #drop {
+        display: inline-block;
+        float: right;
+        margin-right: 15px;
+    }
+
+    #navbar .list {
+        display: none;
+    }
+
+    #navbar li {
+        padding: 10px;
+        margin: 0;
+    }
+
+    #projects .projects-content {
+        width: 300px;
+        height: 200px;
+    }
+
+    #projects .projects-content .np {
+        width: 299px;
+        margin-top: 128px;
     }
 }
 
