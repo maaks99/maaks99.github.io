@@ -19,9 +19,11 @@ $(document).ready(function () {
 
     // smothScroll
 
+    let navbar = $('#navbar').height();
+
     $('a').click(function () {
 
-        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear')
+        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top - navbar}, 500, 'linear')
 
     });
 
