@@ -25,22 +25,26 @@ i {
 }
 
 #display{
-    background-color: rgb(59, 134, 105);
+    background-color: rgb(45, 151, 184);
     display: inline-block;
     width: 40%;
     border: 2px solid black;
 }
 
 #btn {
-    background-color: rgb(233, 15, 15);
+    background-color: rgb(27, 81, 180);
     cursor: pointer;
     border: 0;
     margin-bottom: 20px;
     margin-left: 20px;
     padding: 10px;
     border-radius: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 0.3s;
 }
 
 #btn:hover {
-    background-color: green;
+    background-color: rgb(52, 109, 200);
 }

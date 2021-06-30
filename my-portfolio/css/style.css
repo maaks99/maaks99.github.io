@@ -218,7 +218,7 @@ li,a {
 .info-box .infobox-inner img:hover {
     transform: scale(1.1);
     transition: all 0.3s;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 /* SectionContact */
