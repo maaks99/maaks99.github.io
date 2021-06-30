@@ -169,7 +169,7 @@ li,a {
     transition: 0.5s;
     font-weight: bold;
     color: rgb(106, 246, 12);
-    transform: scaleX(1.1);
+    transform: scaleX(1.05);
 }
 
 .about-content .skills .skill-box i {
@@ -216,7 +216,7 @@ li,a {
 }
 
 .info-box .infobox-inner img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: all 0.3s;
     opacity: 0.8;
 }
