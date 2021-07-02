@@ -4,14 +4,16 @@ $(document).ready(function () {
 
     let dropDown = $("#drop");
     let list = $(".list");
-
-    $(dropDown, list).click(function () {
+    
+   
+    $(dropDown).click(function () {
 
         if (list.hasClass("show")) {
-
+            $('.drop-down').height(150);
             list.css("display", "inline-block");
             list.removeClass("show");
         } else {
+            $('.drop-down').height(0);
             list.css("display", "none");
             list.addClass("show");
         }
@@ -19,11 +21,11 @@ $(document).ready(function () {
 
     // smothScroll
 
-    let navbar = $('#navbar').height();
+    let navHeight = $('.drop-down').height();
 
     $('a').click(function () {
 
-        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top - navbar}, 500, 'linear')
+        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top - navHeight}, 500, 'linear')
 
     });
 

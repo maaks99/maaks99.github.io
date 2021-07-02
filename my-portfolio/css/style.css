@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,600&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -36,6 +42,7 @@
     width: 100%;
     z-index: 1;
     font-weight: bold;
+    transition: all 0.3s;
 }
 
 li,a {
@@ -57,17 +64,21 @@ li,a {
     margin-right: 40px;
 }
 
-#navbar li:hover {
-    background-color: rgb(62, 146, 224);
+#navbar ul a:hover {
+    color: rgb(62, 146, 224);
     transition: 0.3s;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-.drop-down #drop {
+#drop {
     display: none;
     color: rgb(62, 146, 224);
     cursor: pointer;
+}
+
+.drop-down {
+    transition: height 0.3s ease;
 }
 
 .drop-down .list {
@@ -126,9 +137,11 @@ li,a {
 }
 
 .about-content .about-info {
-    padding: 0 30px;
-    margin-top: 35px;
-    margin-left: 15%;
+    margin-left: 12%;
+}
+
+.about-content .skills {
+    margin-right: 12%;
 }
 
 .about-content h2 {
@@ -137,19 +150,22 @@ li,a {
     margin-bottom: 20px;
 }
 
+.about-content .about-info h2 {
+    text-align: center;
+}
+
+.about-content .skills h2 {
+    text-align: center;
+}
+
+.about-content .image img {
+    width: 400px;
+    border-radius: 50%;
+}
+
 .about-content .image {
     margin-top: 70px;
     margin-bottom: 50px;
-}
-
-.about-content .image:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-.about-content .skills {
-    margin-right: 300px;
-    margin-top: 35px;
 }
 
 .about-content .skills-list {
@@ -168,7 +184,7 @@ li,a {
     padding: 13px;
     transition: 0.5s;
     font-weight: bold;
-    color: rgb(106, 246, 12);
+    color: #fff;
     transform: scaleX(1.05);
 }
 
@@ -306,10 +322,10 @@ li,a {
     #navbar, #home, #about, #projects {
         width: 100%;
     }
-    .drop-down #drop {
+    #drop {
         display: inline-block;
-        float: right;
         margin-right: 15px;
+        float: right;
     }
 
     #navbar .list {
@@ -329,9 +345,23 @@ li,a {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 751px) {
     .col-md-33p {
         width: 33.33%;
+    }
+
+    #navbar {
+        height: 68px;
+    }
+
+    #navbar .drop-down .list {
+        display: inline-block !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .about-content .image img {
+        width: 80%;
     }
 }
 
@@ -382,6 +412,3 @@ li,a {
     }
 
 }
-
-
-
