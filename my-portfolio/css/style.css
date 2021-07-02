@@ -137,17 +137,16 @@ li,a {
 }
 
 .about-content .about-info {
-    margin-left: 12%;
+    margin-left: 15%;
 }
 
 .about-content .skills {
-    margin-right: 12%;
+    margin-right: 15%;
 }
 
 .about-content h2 {
     font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 20px;
 }
 
 .about-content .about-info h2 {
@@ -164,8 +163,8 @@ li,a {
 }
 
 .about-content .image {
-    margin-top: 70px;
-    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .about-content .skills-list {
