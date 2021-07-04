@@ -381,12 +381,11 @@ li,a {
     }
 
     .about-content .about-info {
-        width: 100%;
         text-align: center;
     }
 
     .about-content .info-me {
-        width: 100%;
+        width: 95%;
     }
 
     .about-content .skills {
