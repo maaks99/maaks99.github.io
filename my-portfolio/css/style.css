@@ -21,10 +21,12 @@ body {
     margin-bottom: 60px;
     background-color: rgb(62, 146, 224);
     color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
 }
 
 .btn:hover {
-    background-color: blue;
+    background-color: rgb(30, 105, 226);
     transition: all 0.3s;
 }
 
@@ -112,8 +114,10 @@ li,a {
 }
 
 /* sectionAbout */
+
 #about {
-    background: url(../img/bg-about.png) no-repeat;
+    background-image: linear-gradient(#f4f6f8,#d6e0e6);  
+    
 }
 
 #about h1 {
@@ -145,7 +149,8 @@ li,a {
 }
 
 .about-content h2 {
-    font-size: 2rem;
+    margin-top: 50px;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
@@ -155,11 +160,6 @@ li,a {
 
 .about-content .skills h2 {
     text-align: center;
-}
-
-.about-content .image img {
-    width: 400px;
-    border-radius: 50%;
 }
 
 .about-content .image {
@@ -204,9 +204,10 @@ li,a {
 }
 
 #projects h2 {
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
     padding-top: 40px;
+    margin-bottom: 50px;
 }
 
 .row {
@@ -248,7 +249,7 @@ li,a {
 }
 
 #contact .contact-box h2 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 50px;
 }
 
@@ -311,9 +312,13 @@ li,a {
 /* Media */
 
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
     #about .about-info {
-        margin-left: 0;
+        margin-left: 15px;
+    }
+
+    #about .skills {
+        margin-right: 15px;
     }
 }
 
@@ -404,7 +409,7 @@ li,a {
 
     .skills-list .skill-box p {
         margin: auto;
-    }
+    } 
 
     .col-md-33p {
         width: 100%;

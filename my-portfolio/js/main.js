@@ -4,6 +4,7 @@ $(document).ready(function () {
 
     let dropDown = $("#drop");
     let list = $(".list");
+   
     
    
     $(dropDown).click(function () {
