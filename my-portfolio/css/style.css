@@ -347,6 +347,11 @@ li,a {
     #form input {
         width: 90%;
     }
+
+    #message {
+        width: 70%;
+    }
+
 }
 
 @media (min-width: 751px) {
